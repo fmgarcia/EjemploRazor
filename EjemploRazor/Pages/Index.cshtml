@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Proyecto de ejemplo de páginas Razor</h1>
+    <p>Enlace del curso <a href="http://213.32.68.22/moodle/course/view.php?id=33"> aprende C# en la EOI</a>.</p>
+</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://phantom-marca.unidadeditorial.es/e1ea251fdd6791ee86ec981b251a4017/resize/660/f/webp/assets/multimedia/imagenes/2022/04/12/16497526167609.jpg" class="d-block w-100" alt="Primera imagen">
+    </div>
+    <div class="carousel-item">
+      <img src="https://phantom-marca.unidadeditorial.es/d29df3b1da3576dd6abcbf75c2aa6e7a/resize/660/f/webp/assets/multimedia/imagenes/2022/04/11/16497075646352.jpg" class="d-block w-100" alt="Segunda imagen">
+    </div>
+    <div class="carousel-item">
+      <img src="https://phantom-marca.unidadeditorial.es/198d4725fb749ce3a8e79e3ec3a11f9a/resize/660/f/webp/assets/multimedia/imagenes/2022/04/08/16494190097373.jpg" class="d-block w-100" alt="Tercera imagen">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

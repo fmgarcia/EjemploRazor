@@ -1,0 +1,54 @@
+﻿@page
+@model EjemploRazor.Pages.Especializaciones.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Especializacion</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Especializacion.id" />
+            <div class="form-group">
+                <label asp-for="Especializacion.name" class="control-label"></label>
+                <input asp-for="Especializacion.name" class="form-control" />
+                <span asp-validation-for="Especializacion.name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Especializacion.profession" class="control-label"></label>
+                <input asp-for="Especializacion.profession" class="form-control" />
+                <span asp-validation-for="Especializacion.profession" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Especializacion.elite" /> @Html.DisplayNameFor(model => model.Especializacion.elite)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Especializacion.icon" class="control-label"></label>
+                <input asp-for="Especializacion.icon" class="form-control" />
+                <span asp-validation-for="Especializacion.icon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Especializacion.background" class="control-label"></label>
+                <input asp-for="Especializacion.background" class="form-control" />
+                <span asp-validation-for="Especializacion.background" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+                <a href="./Index" class="btn btn-danger" role="button" >Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
