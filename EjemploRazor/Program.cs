@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using EjemploRazor.Data;
 using EjemploRazor;
 
-
+// Comentario para GIt
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
